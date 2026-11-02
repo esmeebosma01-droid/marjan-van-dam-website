@@ -1,18 +1,14 @@
+
 import "./Footer.css";
 import logo from "../assets/marjan-logo-transparent.png";
 
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="footer-container">
 
-        {/* =========================
-            BRAND
-        ========================= */}
-
+        {/* BRAND */}
         <div className="footer-brand">
-
           <img
             src={logo}
             alt="Marjan van Dam - Paard & Coaching"
@@ -25,16 +21,19 @@ function Footer() {
           </p>
 
           <div className="footer-socials">
-
             <a
-              href="#"
+              href="https://www.instagram.com/marjanvandam.paard.en.coach/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
               ◎
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/marjan-van-dam-29b34995/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               in
@@ -46,57 +45,24 @@ function Footer() {
             >
               ✉
             </a>
-
           </div>
-
         </div>
 
-
-        {/* =========================
-            NAVIGATIE
-        ========================= */}
-
+        {/* NAVIGATIE */}
         <div className="footer-column">
-
-          <span className="footer-heading">
-            NAVIGATIE
-          </span>
-
+          <span className="footer-heading">NAVIGATIE</span>
           <div className="footer-line"></div>
 
-          <a href="/">
-            Home
-          </a>
-
-          <a href="/over-ons">
-            Over ons
-          </a>
-
-          <a href="/aanbod">
-            Aanbod
-          </a>
-
-          <a href="/tarieven">
-            Tarieven
-          </a>
-
-          <a href="/contact">
-            Contact
-          </a>
-
+          <a href="/">Home</a>
+          <a href="/over-ons">Over ons</a>
+          <a href="/aanbod">Aanbod</a>
+          <a href="/tarieven">Tarieven</a>
+          <a href="/contact">Contact</a>
         </div>
 
-
-        {/* =========================
-            AANBOD
-        ========================= */}
-
+        {/* AANBOD */}
         <div className="footer-column">
-
-          <span className="footer-heading">
-            AANBOD
-          </span>
-
+          <span className="footer-heading">AANBOD</span>
           <div className="footer-line"></div>
 
           <a href="/aanbod#individuele-coaching-info">
@@ -114,25 +80,14 @@ function Footer() {
           <a href="/aanbod#eigen-paard-info">
             Coaching op locatie
           </a>
-
         </div>
 
-
-        {/* =========================
-            CONTACT
-        ========================= */}
-
+        {/* CONTACT */}
         <div className="footer-column footer-contact">
-
-          <span className="footer-heading">
-            CONTACT
-          </span>
-
+          <span className="footer-heading">CONTACT</span>
           <div className="footer-line"></div>
 
-          <p>
-            📍 Lutjegast, Groningen
-          </p>
+          <p>📍 Lutjegast, Groningen</p>
 
           <a href="tel:0654344039">
             ✆ 06 - 54 34 40 39
@@ -142,54 +97,45 @@ function Footer() {
             ✉ paard.en.coach@outlook.com
           </a>
 
-          <a
-            href="/contact"
-            className="footer-button"
-          >
-            <span>
-              Plan een kennismaking
-            </span>
-
-            <span className="footer-button-arrow">
-              →
-            </span>
+          <a href="/contact" className="footer-button">
+            <span>Plan een kennismaking</span>
+            <span className="footer-button-arrow">→</span>
           </a>
-
         </div>
-
       </div>
 
-
-      {/* =========================
-          FOOTER BOTTOM
-      ========================= */}
-
+      {/* FOOTER BOTTOM */}
       <div className="footer-bottom">
-
         <span>
           © 2026 Marjan van Dam | Paard & Coaching
         </span>
 
-        <span className="footer-leaf">
-          ❧
-        </span>
+        <span className="footer-leaf">❧</span>
 
         <div>
+          <span>KvK: 42195201</span>
 
-          <a href="#">
+          <span>|</span>
+
+          <a
+            href="/privacyverklaring.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Privacyverklaring
           </a>
 
           <span>|</span>
 
-          <a href="#">
+          <a
+            href="/algemene-voorwaarden.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Algemene voorwaarden
           </a>
-
         </div>
-
       </div>
-
     </footer>
   );
 }
