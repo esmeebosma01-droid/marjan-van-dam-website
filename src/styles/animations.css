@@ -53,3 +53,16 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
+/* VAN LINKS */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-left.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
