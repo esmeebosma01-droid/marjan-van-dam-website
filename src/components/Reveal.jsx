@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import "../styles/animations.css";
 
@@ -9,23 +10,24 @@ function Reveal({ children, className = "", direction = "", delay = 0 }) {
 
     if (!element) return;
 
-    // Delay vanuit de component meegeven
+    // Animatievertraging instellen
     if (delay) {
       element.style.setProperty("--reveal-delay", `${delay}s`);
     }
 
+    // Controleren wanneer het element in beeld komt
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           element.classList.add("reveal-visible");
-        } else {
-          // Haal de class weer weg zodat de animatie
-          // opnieuw kan starten wanneer je terug scrollt
-          element.classList.remove("reveal-visible");
+
+          // Observer stoppen zodra de animatie is gestart
+          observer.unobserve(element);
         }
       },
       {
-        threshold: 0.15,
+        threshold: 0,
+        rootMargin: "0px 0px -40px 0px",
       }
     );
 
