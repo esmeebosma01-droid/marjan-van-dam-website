@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dulcet-lollipop-edbb84.netlify.app/sitemap.xml
