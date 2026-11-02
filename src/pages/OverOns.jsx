@@ -11,7 +11,10 @@ function OverOns() {
     <main className="over-ons">
 
       {/* HERO */}
-      <section className="over-ons-hero">
+      <section
+        className="over-ons-hero"
+        aria-label="Over Marjan van Dam en haar paard Firenzio"
+      >
         <div className="over-ons-container">
 
           <Reveal direction="reveal-up">
@@ -47,7 +50,7 @@ function OverOns() {
             <div className="over-ons-main-photo">
               <img
                 src={overons}
-                alt="Marjan en Firenzio"
+                alt="Marjan van Dam samen met haar paard Firenzio"
                 className="firenzio-image"
               />
             </div>
@@ -115,7 +118,7 @@ function OverOns() {
               <div className="person-photo">
                 <img
                   src={mamaFirenzio}
-                  alt="Marjan van Dam"
+                  alt="Marjan van Dam, paardencoach bij Paard & Coaching"
                   className="person-image"
                 />
               </div>
@@ -236,7 +239,7 @@ function OverOns() {
               <div className="person-photo">
                 <img
                   src={firenzio}
-                  alt="Firenzio"
+                  alt="Firenzio, het paard waarmee Marjan paardencoaching geeft"
                   className="person-image"
                 />
               </div>
@@ -254,7 +257,7 @@ function OverOns() {
             <div className="together-photo">
               <img
                 src={samen}
-                alt="Marjan en Firenzio"
+                alt="Marjan en Firenzio tijdens de paardencoaching"
                 className="together-image"
               />
             </div>

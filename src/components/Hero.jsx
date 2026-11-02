@@ -1,3 +1,4 @@
+
 import "./Hero.css";
 import Reveal from "./Reveal";
 import firenzioHero from "../assets/firenzio-hero2.jpg";
@@ -47,7 +48,7 @@ function Hero() {
 
             <img
               src={firenzioHero}
-              alt="Firenzio"
+              alt="Paard Firenzio bij de paardencoaching van Marjan van Dam in Groningen"
             />
 
           </div>

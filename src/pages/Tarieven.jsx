@@ -1,6 +1,7 @@
 
 import "./Tarieven.css";
 import Reveal from "../components/Reveal";
+import { Link } from "react-router-dom";
 import halsterMuur from "../assets/halster-muur.png";
 
 function Tarieven() {
@@ -11,7 +12,10 @@ function Tarieven() {
           HERO
       ========================= */}
 
-      <section className="tarieven-hero">
+      <section
+        className="tarieven-hero"
+        aria-label="Tarieven voor paardencoaching"
+      >
 
         <div className="tarieven-hero-text">
 
@@ -38,7 +42,6 @@ function Tarieven() {
 
         </div>
 
-
         <Reveal
           direction="right"
           className="tarieven-hero-photo-reveal"
@@ -48,7 +51,7 @@ function Tarieven() {
 
             <img
               src={halsterMuur}
-              alt="Halster aan een houten muur"
+              alt="Paardenhalster aan een houten muur"
             />
 
           </div>
@@ -65,6 +68,7 @@ function Tarieven() {
       <section
         id="tarieven-overzicht"
         className="tarieven-investering"
+        aria-label="Overzicht van de tarieven"
       >
 
         <Reveal>
@@ -292,7 +296,10 @@ function Tarieven() {
           AANDACHT
       ========================= */}
 
-      <section className="tarieven-aandacht">
+      <section
+        className="tarieven-aandacht"
+        aria-label="Persoonlijke aandacht bij coaching"
+      >
 
         <Reveal>
 
@@ -334,7 +341,10 @@ function Tarieven() {
           CTA
       ========================= */}
 
-      <section className="tarieven-cta">
+      <section
+        className="tarieven-cta"
+        aria-label="Vrijblijvend kennismaken"
+      >
 
         <Reveal>
 
@@ -356,13 +366,13 @@ function Tarieven() {
               contact op voor een vrijblijvend gesprek.
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="tarieven-button"
             >
               Neem contact op
               <span>→</span>
-            </a>
+            </Link>
 
           </div>
 

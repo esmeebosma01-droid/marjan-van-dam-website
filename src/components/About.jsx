@@ -11,18 +11,16 @@ function About() {
       <div className="container about-grid">
 
         {/* FOTO */}
-
         <Reveal direction="left">
           <div className="about-image">
             <img
               src={mama}
-              alt="Marjan van Dam"
+              alt="Marjan van Dam, paardencoach bij Paard & Coaching in Lutjegast"
             />
           </div>
         </Reveal>
 
         {/* TEKST */}
-
         <Reveal direction="right">
           <div className="about-content">
 
@@ -52,7 +50,7 @@ function About() {
               waarop paarden reageren, maakt dit werk voor mij zo waardevol.
             </p>
 
-            <Link to="/over-ons" className="about-button">
+            <Link to="/aanbod" className="about-button">
               Ontdek het aanbod
               <span aria-hidden="true">→</span>
             </Link>

@@ -17,7 +17,7 @@ function Aanbod() {
         <div className="aanbod-hero-image">
           <img
             src={paardHero}
-            alt="Paard in de natuur"
+            alt="Paard in de natuurlijke omgeving van de paardencoaching"
           />
         </div>
 
@@ -109,7 +109,7 @@ function Aanbod() {
 
               <img
                 src={persoonlijkeCoaching}
-                alt="Individuele paardencoaching"
+                alt="Individuele coaching met paarden bij Marjan van Dam"
               />
 
             </div>
@@ -189,7 +189,7 @@ function Aanbod() {
 
               <img
                 src={teamcoaching}
-                alt="Paarden in de wei bij teamcoaching"
+                alt="Paarden in de wei bij teamcoaching van Marjan van Dam"
               />
 
             </div>
@@ -350,7 +350,7 @@ function Aanbod() {
 
               <img
                 src={coachingEigenPaard}
-                alt="Coaching met je eigen paard"
+                alt="Coaching met je eigen paard gericht op vertrouwen en samenwerking"
               />
 
             </div>

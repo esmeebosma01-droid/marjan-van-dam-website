@@ -1,10 +1,13 @@
 
 import "./CTA.css";
+import { Link } from "react-router-dom";
 
 function CTA() {
   return (
-    <section className="cta">
-
+    <section
+      className="cta"
+      aria-label="Vrijblijvend kennismaken met paardencoaching"
+    >
       <div className="cta-content">
 
         <span className="section-tag">
@@ -22,12 +25,11 @@ function CTA() {
           veranderen en of paardencoaching bij je past.
         </p>
 
-        <a href="/contact" className="primary">
+        <Link to="/contact" className="primary">
           Plan een kennismaking
-        </a>
+        </Link>
 
       </div>
-
     </section>
   );
 }

@@ -20,7 +20,6 @@ function Reviews() {
 
   const [activeReview, setActiveReview] = useState(0);
 
-  // Automatisch wisselen
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveReview((current) => (current + 1) % reviews.length);
@@ -30,7 +29,10 @@ function Reviews() {
   }, [reviews.length]);
 
   return (
-    <section className="reviews home-dark">
+    <section
+      className="reviews home-dark"
+      aria-label="Ervaringen van klanten met paardencoaching"
+    >
       <div className="reviews-container">
 
         {/* TITEL */}
@@ -48,7 +50,7 @@ function Reviews() {
 
         {/* REVIEW */}
         <div className="review-main">
-          <div className="quote-mark">
+          <div className="quote-mark" aria-hidden="true">
             “
           </div>
 
@@ -64,22 +66,28 @@ function Reviews() {
               — {reviews[activeReview].name}
             </span>
 
-            <div className="review-stars">
+            <div
+              className="review-stars"
+              aria-label="5 sterren"
+            >
               ★★★★★
             </div>
           </div>
 
           {/* STREEPJES */}
-          <div className="review-dots">
+          <div className="review-dots" aria-label="Kies een review">
             {reviews.map((review, index) => (
               <button
                 key={review.name}
+                type="button"
                 className={index === activeReview ? "active" : ""}
                 onClick={() => setActiveReview(index)}
                 aria-label={`Bekijk review van ${review.name}`}
+                aria-pressed={index === activeReview}
               />
             ))}
           </div>
+
         </div>
       </div>
     </section>

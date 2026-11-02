@@ -9,7 +9,10 @@ function Contact() {
 
       {/* HERO */}
 
-      <section className="contact-hero">
+      <section
+        className="contact-hero"
+        aria-label="Contact met Marjan van Dam"
+      >
 
         <div className="contact-hero-content">
 
@@ -45,7 +48,7 @@ function Contact() {
 
               <img
                 src={tarieven}
-                alt="Paardencoaching"
+                alt="Paard tijdens een paardencoachingsessie"
               />
 
             </div>
@@ -59,7 +62,10 @@ function Contact() {
 
       {/* CONTACT */}
 
-      <section className="contact-main">
+      <section
+        className="contact-main"
+        aria-label="Contactgegevens en contactformulier"
+      >
 
         <div className="contact-container">
 
@@ -153,7 +159,7 @@ function Contact() {
                 <input
                   type="hidden"
                   name="_captcha"
-                  value="true"
+                  value="false"
                 />
 
                 <input
@@ -165,7 +171,7 @@ function Contact() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:5173/bedankt"
+                  value="https://dulcet-lollipop-edbb84.netlify.app/bedankt"
                 />
 
 
@@ -182,6 +188,7 @@ function Contact() {
                       id="naam"
                       name="naam"
                       placeholder="Je naam"
+                      autoComplete="name"
                       required
                     />
 
@@ -199,6 +206,7 @@ function Contact() {
                       id="email"
                       name="email"
                       placeholder="Je e-mailadres"
+                      autoComplete="email"
                       required
                     />
 
@@ -218,6 +226,7 @@ function Contact() {
                     id="telefoon"
                     name="telefoon"
                     placeholder="Je telefoonnummer"
+                    autoComplete="tel"
                   />
 
                 </div>
@@ -261,7 +270,10 @@ function Contact() {
 
       {/* CTA */}
 
-      <section className="contact-cta">
+      <section
+        className="contact-cta"
+        aria-label="Vrijblijvend kennismaken met paardencoaching"
+      >
 
         <Reveal>
 

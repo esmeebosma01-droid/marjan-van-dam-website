@@ -4,14 +4,14 @@ import Reveal from "./Reveal";
 
 function Services() {
   return (
-    <section className="services home-light">
+    <section
+      className="services home-light"
+      aria-label="Paardencoaching en coaching aanbod"
+    >
 
       <div className="services-container">
 
-        {/* =========================
-            LINKERKANT
-        ========================= */}
-
+        {/* LINKERKANT */}
         <Reveal direction="left">
 
           <div className="services-intro">
@@ -39,18 +39,10 @@ function Services() {
 
         </Reveal>
 
-
-        {/* =========================
-            RECHTERKANT
-        ========================= */}
-
+        {/* RECHTERKANT */}
         <div className="services-list">
 
-
-          {/* =========================
-              01 INDIVIDUELE PAARDENCOACHING
-          ========================= */}
-
+          {/* 01 INDIVIDUELE PAARDENCOACHING */}
           <Reveal direction="right">
 
             <article className="service-item">
@@ -85,11 +77,7 @@ function Services() {
 
           </Reveal>
 
-
-          {/* =========================
-              02 TEAMCOACHING
-          ========================= */}
-
+          {/* 02 TEAMCOACHING */}
           <Reveal direction="right" delay={0.1}>
 
             <article className="service-item">
@@ -110,7 +98,7 @@ function Services() {
                 </p>
 
                 <small className="service-availability">
-                  Beschikbaar vanaf december 2026.
+                  Beschikbaar vanaf januari 2027.
                 </small>
 
                 <a
@@ -127,11 +115,7 @@ function Services() {
 
           </Reveal>
 
-
-          {/* =========================
-              03 COACHING MET JE EIGEN PAARD
-          ========================= */}
-
+          {/* 03 COACHING MET JE EIGEN PAARD */}
           <Reveal direction="right" delay={0.2}>
 
             <article className="service-item">
@@ -165,7 +149,6 @@ function Services() {
             </article>
 
           </Reveal>
-
 
         </div>
 
