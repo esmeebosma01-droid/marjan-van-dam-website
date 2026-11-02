@@ -1,7 +1,7 @@
 
 import "./OverOns.css";
 import mamaFirenzio from "../assets/mamafirenzio.jpg";
-import overons from "../assets/overons.jpg";
+import overons from "../assets/Overons.jpg";
 import firenzio from "../assets/firenzio.jpg";
 import samen from "../assets/samen.jpg";
 
