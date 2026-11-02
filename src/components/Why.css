@@ -1,0 +1,183 @@
+
+.why {
+    width: 100%;
+    padding: 110px 0;
+    background: #fffdf9;
+    color: #3d3028;
+}
+
+.why .container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    display: block;
+}
+
+/* INTRO */
+
+.why-intro-wrapper {
+    max-width: 1000px;
+}
+
+.why .section-tag {
+    display: block;
+    margin-bottom: 22px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #9a7354;
+}
+
+.why-line {
+    width: 65px;
+    height: 2px;
+    margin: 0 0 28px;
+    background: #9a7354;
+}
+
+.why h2 {
+    max-width: 1000px;
+    margin: 0 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -1.5px;
+    color: #3d3028;
+}
+
+.why-intro {
+    max-width: 800px;
+    margin: 0 0 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #66574c;
+}
+
+.why-description {
+    max-width: 800px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+/* CARDS */
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin-top: 65px;
+}
+
+.why-card {
+    padding: 28px 0 10px;
+    border-top: 1px solid #9a7354;
+}
+
+.why-number {
+    display: block;
+    margin-bottom: 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #9a7354;
+}
+
+.card-line {
+    width: 45px;
+    height: 1px;
+    margin-bottom: 22px;
+    background: #9a7354;
+}
+
+.why-card h3 {
+    margin: 0 0 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #3d3028;
+}
+
+.why-card p {
+    max-width: 330px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #66574c;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .why {
+        padding: 90px 0;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-top: 50px;
+    }
+
+    .why-card {
+        padding: 30px 0;
+    }
+
+    .why-card p {
+        max-width: 600px;
+    }
+}
+
+/* MOBIEL */
+
+@media (max-width: 600px) {
+    .why {
+        padding: 75px 0;
+    }
+
+    .why .container {
+        width: 88%;
+    }
+
+    .why .section-tag {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .why h2 {
+        font-size: 3rem;
+        line-height: 1.05;
+        letter-spacing: -1px;
+    }
+
+    .why-intro {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    .why-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .why-grid {
+        margin-top: 45px;
+    }
+
+    .why-card h3 {
+        font-size: 26px;
+    }
+
+    .why-card p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+}

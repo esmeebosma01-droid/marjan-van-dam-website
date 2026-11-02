@@ -1,0 +1,114 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F6F1EA;
+    color:#2F241D;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* Algemene container */
+
+.container{
+    width:min(90%,1200px);
+    margin:auto;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:600;
+    color:#2F241D;
+}
+
+h1{
+    font-size:clamp(3rem,7vw,6rem);
+    line-height:.95;
+}
+
+h2{
+    font-size:clamp(2.5rem,5vw,4rem);
+    margin-bottom:25px;
+}
+
+h3{
+    font-size:1.7rem;
+}
+
+p{
+    font-size:18px;
+    color:#5A4B42;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Buttons */
+
+button{
+    font-family:'Poppins',sans-serif;
+    border:none;
+    cursor:pointer;
+}
+
+/* Sections */
+
+section{
+    padding:120px 0;
+}
+
+/* Kleine titel boven secties */
+
+.section-tag{
+
+    display:inline-block;
+
+    color:#8E6B4A;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+/* Afbeeldingen */
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+/* Mooie selectie */
+
+::selection{
+    background:#8E6B4A;
+    color:white;
+}

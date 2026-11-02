@@ -1,0 +1,55 @@
+/* =========================
+   SCROLL ANIMATIONS
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* VAN LINKS */
+
+.reveal {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* VAN RECHTS */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-right.reveal-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* VAN BENEDEN */
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(45px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal-up.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

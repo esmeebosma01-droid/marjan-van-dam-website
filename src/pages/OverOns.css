@@ -1,0 +1,519 @@
+/* =========================
+   ALGEMEEN
+========================= */
+
+.over-ons {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f4ee;
+    color: #3d3028;
+}
+
+.over-ons-container {
+    width: min(1350px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.over-ons-tag {
+    display: block;
+    margin-bottom: 25px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #9a7354;
+}
+
+.over-ons-line {
+    width: 65px;
+    height: 2px;
+    margin: 30px 0;
+    background: #9a7354;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.over-ons-hero {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 110px 0 100px;
+    box-sizing: border-box;
+    background: #f8f4ee;
+}
+
+.over-ons-hero .over-ons-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.over-ons-intro {
+    max-width: 570px;
+    padding-left: 45px;
+}
+
+.over-ons-intro h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 6vw, 82px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -2px;
+    color: #3d3028;
+}
+
+.over-ons-subtitle {
+    max-width: 500px;
+    margin: 0 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+.over-ons-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    min-width: 215px;
+    padding: 15px 25px;
+    border: 1px solid #8d6549;
+    border-radius: 50px;
+    background: #8d6549;
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.over-ons-button span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.over-ons-button:hover {
+    background: #5b4030;
+    border-color: #5b4030;
+    color: #fff;
+}
+
+.over-ons-button:hover span {
+    transform: translateY(4px);
+}
+
+
+/* HERO FOTO */
+
+.over-ons-main-photo {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    border-radius: 180px 180px 30px 30px;
+}
+
+.firenzio-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   ONS VERHAAL
+========================= */
+
+.over-ons-story {
+    width: 100%;
+    padding: 130px 0;
+    background: #fffdf9;
+}
+
+.story-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.story-heading h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 68px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -1.5px;
+    color: #3d3028;
+}
+
+.story-text {
+    padding-top: 10px;
+}
+
+.story-text p {
+    margin: 0 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #66574c;
+}
+
+.story-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   PERSON SECTIONS
+========================= */
+
+.person-section {
+    width: 100%;
+    padding: 130px 0;
+}
+
+.person-marjan {
+    background: #f1e8df;
+}
+
+.person-firenzio {
+    background: #f8f4ee;
+}
+
+.person-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.person-grid.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.person-grid.reverse .person-content {
+    order: 1;
+}
+
+.person-grid.reverse .person-photo {
+    order: 2;
+}
+
+.person-photo {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.person-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.person-content {
+    max-width: 570px;
+}
+
+.person-content h2 {
+    margin: 0 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 68px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -1.5px;
+    color: #3d3028;
+}
+
+.person-content p {
+    margin: 0 0 25px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.85;
+    color: #66574c;
+}
+
+.person-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SAMEN
+========================= */
+
+.together-section {
+    width: 100%;
+    padding: 110px 0 130px;
+    background: #fffdf9;
+}
+
+.together-section .over-ons-container {
+    width: min(1350px, 90%);
+    margin: 0 auto;
+}
+
+
+/* GROTE FOTO */
+
+.together-photo {
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.together-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* TEKST ONDER FOTO */
+
+.together-content {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.together-heading h2 {
+    margin: 20px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 5vw, 72px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -2px;
+    color: #3d3028;
+}
+
+.together-text {
+    padding-top: 8px;
+}
+
+.together-text p {
+    margin: 0 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+.together-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .over-ons-hero {
+        padding: 100px 0 80px;
+    }
+
+    .over-ons-hero .over-ons-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .over-ons-intro {
+        padding-left: 0;
+        max-width: 700px;
+    }
+
+    .over-ons-main-photo {
+        height: 550px;
+    }
+
+    .story-layout {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .person-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .person-grid.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .person-grid.reverse .person-content {
+        order: 1;
+    }
+
+    .person-grid.reverse .person-photo {
+        order: 2;
+    }
+
+    .person-content {
+        max-width: 700px;
+    }
+
+    .together-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 600px) {
+
+    .over-ons-container {
+        width: 88%;
+    }
+
+
+    /* HERO */
+
+    .over-ons-hero {
+        min-height: auto;
+        padding: 100px 0 70px;
+    }
+
+    .over-ons-hero .over-ons-container {
+        width: 88%;
+        gap: 45px;
+    }
+
+    .over-ons-tag {
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 22px;
+    }
+
+    .over-ons-intro h1 {
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .over-ons-subtitle {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .over-ons-main-photo {
+        height: 420px;
+        border-radius: 120px 120px 25px 25px;
+    }
+
+    .over-ons-button {
+        width: auto;
+        padding: 14px 22px;
+    }
+
+
+    /* ONS VERHAAL */
+
+    .over-ons-story {
+        padding: 90px 0;
+    }
+
+    .story-layout {
+        gap: 40px;
+    }
+
+    .story-heading h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .story-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* PERSONEN */
+
+    .person-section {
+        padding: 90px 0;
+    }
+
+    .person-grid {
+        gap: 40px;
+    }
+
+    .person-photo {
+        height: 430px;
+        border-radius: 22px;
+    }
+
+    .person-content h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .person-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* SAMEN */
+
+    .together-section {
+        padding: 80px 0 90px;
+    }
+
+    .together-section .over-ons-container {
+        width: 88%;
+    }
+
+    .together-photo {
+        height: 360px;
+        border-radius: 22px;
+    }
+
+    .together-content {
+        margin-top: 35px;
+        gap: 30px;
+    }
+
+    .together-heading h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .together-text p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+}

@@ -1,0 +1,190 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:25px 0;
+    background:rgba(246,241,234,.88);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.navbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo h1{
+    font-size:34px;
+    margin:0;
+}
+
+.logo span{
+    display:block;
+    margin-top:2px;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#8E6B4A;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8E6B4A;
+}
+
+.btn-nav{
+    background:#5A3D2B;
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+}
+
+.btn-nav:hover{
+    background:#7B5640;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    padding-top:100px;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(35,26,21,.45);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    color:white;
+}
+
+.hero-content h1{
+    color:white;
+}
+
+.hero-content p{
+    color:rgba(255,255,255,.92);
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+}
+
+.primary{
+    background:#8E6B4A;
+    color:white;
+    padding:18px 34px;
+    border-radius:40px;
+}
+
+.secondary{
+    background:white;
+    color:#3B2A23;
+    padding:18px 34px;
+    border-radius:40px;
+}
+/* ===========================
+   WHY SECTION
+=========================== */
+
+.why{
+    background:#F6F1EA;
+}
+
+.why h2{
+    max-width:700px;
+    margin-bottom:70px;
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.why-card{
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:40px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.icon{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.why-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    line-height:1.8;
+
+}
+
+@media(max-width:900px){
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

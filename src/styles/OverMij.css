@@ -1,0 +1,180 @@
+.over-mij-page {
+    background: #f8f4ee;
+    color: #332820;
+}
+
+
+/* HERO */
+
+.over-mij-hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: #6f4b36;
+    color: white;
+    padding: 120px 0;
+}
+
+.over-mij-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+.over-mij-tag {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.over-mij-line {
+    width: 65px;
+    height: 2px;
+    background: #d8b99d;
+    margin-bottom: 35px;
+}
+
+.over-mij-hero h1 {
+    font-size: clamp(4rem, 7vw, 7rem);
+    line-height: 0.95;
+    font-weight: 400;
+    margin: 0 0 35px;
+}
+
+.over-mij-intro {
+    max-width: 600px;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+
+/* CONTENT */
+
+.over-mij-content {
+    padding: 130px 0;
+}
+
+.over-mij-grid {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 460px 1fr;
+    gap: 110px;
+
+    align-items: center;
+}
+
+
+/* FOTO */
+
+.over-mij-image img {
+    width: 100%;
+    height: 620px;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.10);
+}
+
+
+/* TEKST */
+
+.over-mij-text {
+    max-width: 650px;
+}
+
+.over-mij-small-title {
+    display: block;
+
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #9a7354;
+
+    margin-bottom: 25px;
+}
+
+.over-mij-text h2 {
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+    line-height: 1.05;
+
+    font-weight: 400;
+
+    margin: 0 0 40px;
+
+    color: #332820;
+}
+
+.over-mij-text p {
+    font-size: 19px;
+    line-height: 1.9;
+
+    color: #5f5147;
+
+    margin: 0 0 25px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .over-mij-hero {
+        padding: 100px 0;
+    }
+
+    .over-mij-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .over-mij-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .over-mij-text {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+
+/* MOBIEL */
+
+@media (max-width: 600px) {
+
+    .over-mij-hero {
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .over-mij-hero h1 {
+        font-size: 54px;
+    }
+
+    .over-mij-intro {
+        font-size: 19px;
+    }
+
+    .over-mij-content {
+        padding: 80px 0;
+    }
+
+    .over-mij-image img {
+        height: 480px;
+    }
+
+    .over-mij-text h2 {
+        font-size: 42px;
+    }
+
+    .over-mij-text p {
+        font-size: 18px;
+    }
+}

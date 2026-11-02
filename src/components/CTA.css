@@ -1,0 +1,168 @@
+.cta {
+    width: 100%;
+    padding: 120px 0;
+
+    background: #fffdf9;
+
+    overflow: hidden;
+}
+
+.cta-content {
+    width: min(850px, 90%);
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.cta-content .section-tag {
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+
+    color: #9a7354;
+}
+
+
+/* =========================
+   LIJN
+========================= */
+
+.cta-content::before {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 2px;
+
+    margin: 0 auto 28px;
+
+    background: #9a7354;
+}
+
+
+/* =========================
+   TITEL
+========================= */
+
+.cta-content h2 {
+    max-width: 750px;
+
+    margin: 0 auto 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -1px;
+
+    color: #3d3028;
+}
+
+
+/* =========================
+   TEKST
+========================= */
+
+.cta-content p {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.75;
+
+    color: #66574c;
+}
+
+
+/* =========================
+   KNOP
+========================= */
+
+.cta-content .primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 28px;
+
+    border: 1px solid #8d6549;
+    border-radius: 50px;
+
+    background: #8d6549;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.cta-content .primary:hover {
+    background: #5b4030;
+    border-color: #5b4030;
+    color: #fff;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .cta {
+        padding: 100px 0;
+    }
+
+    .cta-content {
+        width: min(750px, 90%);
+    }
+}
+
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 600px) {
+
+    .cta {
+        padding: 80px 0;
+    }
+
+    .cta-content {
+        width: 88%;
+    }
+
+    .cta-content h2 {
+        font-size: 3rem;
+        line-height: 1.05;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .cta-content .primary {
+        padding: 14px 24px;
+    }
+}

@@ -1,0 +1,508 @@
+
+/* =========================
+   CONTACT PAGINA
+========================= */
+
+.contact-page {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f4ee;
+    color: #3d3028;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.contact-hero {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background: #f8f4ee;
+}
+
+.contact-hero-content {
+    width: min(1350px, 90%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.contact-hero-text {
+    max-width: 620px;
+    padding-left: 45px;
+}
+
+.contact-tag {
+    display: block;
+    margin-bottom: 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #9a7354;
+}
+
+.contact-hero h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 6vw, 82px);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -2px;
+    color: #3d3028;
+}
+
+.contact-line {
+    width: 65px;
+    height: 2px;
+    margin: 38px 0 30px;
+    background: #9a7354;
+}
+
+.contact-hero p {
+    max-width: 520px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+/* =========================
+   HERO FOTO
+========================= */
+
+.contact-hero-photo {
+    width: 85%;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 150px 150px 30px 30px;
+    margin-left: auto;
+}
+
+.contact-hero-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================
+   CONTACT MAIN
+========================= */
+
+.contact-main {
+    width: 100%;
+    padding: 130px 0;
+    background: #fffdf9;
+}
+
+.contact-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.contact-info {
+    max-width: 500px;
+}
+
+.contact-info h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 5vw, 68px);
+    font-weight: 400;
+    line-height: 1.02;
+    letter-spacing: -1.5px;
+    color: #3d3028;
+}
+
+.contact-info .contact-line {
+    margin: 32px 0 30px;
+}
+
+.contact-intro {
+    max-width: 480px;
+    margin: 0 0 45px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+/* =========================
+   CONTACT DETAILS
+========================= */
+
+.contact-details {
+    border-top: 1px solid #e7ddd2;
+}
+
+.contact-detail {
+    padding: 22px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-bottom: 1px solid #e7ddd2;
+}
+
+.contact-detail-label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #9a7354;
+}
+
+.contact-detail a,
+.contact-detail p {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #3d3028;
+    text-decoration: none;
+}
+
+.contact-detail a {
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+    color: #8d6549;
+}
+
+/* =========================
+   FORMULIER
+========================= */
+
+.contact-form-wrapper {
+    padding: 45px;
+    background: #f8f4ee;
+    border: 1px solid #e7ddd2;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    color: #3d3028;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 16px;
+    box-sizing: border-box;
+    border: 1px solid #d9cabe;
+    border-radius: 0;
+    background: #fffdf9;
+    color: #3d3028;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-group input {
+    height: 52px;
+}
+
+.form-group textarea {
+    min-height: 170px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9a8b7f;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #9a7354;
+    background: #fff;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    min-width: 210px;
+    padding: 16px 28px;
+    border: 1px solid #8d6549;
+    border-radius: 50px;
+    background: #8d6549;
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-button span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #5b4030;
+    border-color: #5b4030;
+    color: #fff;
+}
+
+.contact-button:hover span {
+    transform: translateX(5px);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.contact-cta {
+    width: 100%;
+    padding: 130px 20px;
+    box-sizing: border-box;
+    background: #f7f4ee;
+    text-align: center;
+}
+
+.contact-cta-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.contact-cta h2 {
+    margin: 25px 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #3d3028;
+}
+
+.contact-cta .contact-line {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-cta p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+/* =========================
+   BEDANKTPAGINA
+========================= */
+
+.contact-thankyou {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    background: #fffdf9;
+    text-align: center;
+}
+
+.contact-thankyou-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-thankyou .contact-tag {
+    margin-bottom: 30px;
+}
+
+.contact-thankyou h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    font-weight: 400;
+    line-height: 1;
+    color: #3d3028;
+}
+
+.contact-thankyou .contact-line {
+    margin: 35px auto;
+}
+
+.contact-thankyou p {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #66574c;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        min-height: auto;
+        padding: 100px 0;
+    }
+
+    .contact-hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .contact-hero-text {
+        padding-left: 0;
+        max-width: 700px;
+    }
+
+    .contact-hero-photo {
+        width: 90%;
+        height: 500px;
+        margin-left: auto;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+    .contact-info {
+        max-width: 700px;
+    }
+
+    .contact-form-wrapper {
+        max-width: 700px;
+    }
+}
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact-hero {
+        padding: 90px 0 70px;
+    }
+
+    .contact-hero-content {
+        width: 88%;
+        gap: 45px;
+    }
+
+    .contact-tag {
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 22px;
+    }
+
+    .contact-hero h1 {
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .contact-hero-photo {
+        width: 85%;
+        height: 420px;
+        border-radius: 120px 120px 25px 25px;
+        margin-left: auto;
+    }
+
+    .contact-main {
+        padding: 90px 0;
+    }
+
+    .contact-container {
+        width: 88%;
+    }
+
+    .contact-info h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .contact-intro {
+        font-size: 16px;
+    }
+
+    .contact-form-wrapper {
+        padding: 28px 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-group input {
+        height: 50px;
+    }
+
+    .contact-cta {
+        padding: 90px 20px;
+    }
+
+    .contact-cta h2 {
+        font-size: 3.2rem;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+
+    .contact-cta p {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 320px;
+    }
+}

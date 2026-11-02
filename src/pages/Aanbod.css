@@ -1,0 +1,687 @@
+
+/* =========================
+   ALGEMEEN
+========================= */
+
+.aanbod-page {
+    width: 100%;
+    overflow: hidden;
+    background: #f8f4ee;
+    color: #3d3028;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.aanbod-hero {
+    width: 100%;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f8f4ee;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO FOTO
+========================= */
+
+.aanbod-hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 67%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.04) 10%,
+        rgba(0, 0, 0, 0.20) 22%,
+        rgba(0, 0, 0, 0.55) 38%,
+        rgba(0, 0, 0, 0.85) 52%,
+        #000000 65%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.04) 10%,
+        rgba(0, 0, 0, 0.20) 22%,
+        rgba(0, 0, 0, 0.55) 38%,
+        rgba(0, 0, 0, 0.85) 52%,
+        #000000 65%
+    );
+}
+
+.aanbod-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 58% center;
+}
+
+
+/* =========================
+   HERO BLEND
+========================= */
+
+.aanbod-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to right,
+        #f8f4ee 0%,
+        #f8f4ee 27%,
+        rgba(248, 244, 238, 0.99) 40%,
+        rgba(248, 244, 238, 0.88) 52%,
+        rgba(248, 244, 238, 0.55) 66%,
+        rgba(248, 244, 238, 0) 100%
+    );
+}
+
+
+/* =========================
+   HERO TEKST
+========================= */
+
+.aanbod-hero-content {
+    position: relative;
+    z-index: 3;
+    width: 58%;
+    max-width: 760px;
+    padding-left: 9vw;
+    padding-right: 30px;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+.aanbod-hero .section-tag {
+    display: block;
+    margin-bottom: 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #9a7354;
+}
+
+.aanbod-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 5vw, 78px);
+    line-height: 0.98;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #3d3028;
+    margin: 0;
+    max-width: 700px;
+}
+
+.aanbod-hero .aanbod-line {
+    width: 65px;
+    height: 2px;
+    background: #9a7354;
+    margin: 38px 0 30px;
+}
+
+.aanbod-hero p {
+    max-width: 500px;
+    margin: 0 0 35px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #66574c;
+}
+
+
+/* =========================
+   RONDE BUTTON
+========================= */
+
+.aanbod-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-width: 250px;
+    padding: 16px 28px;
+    box-sizing: border-box;
+    border: 1px solid #8d6549;
+    border-radius: 50px;
+    background: #8d6549;
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.aanbod-button span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.aanbod-button:hover {
+    background: #5b4030;
+    border-color: #5b4030;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.aanbod-button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   AANBOD SECTIES
+========================= */
+
+.aanbod-section {
+    width: 100%;
+    padding: 130px 7%;
+    box-sizing: border-box;
+    background: #fffdf9;
+}
+
+.aanbod-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 90px;
+}
+
+
+/* =========================
+   TEKST
+========================= */
+
+.aanbod-text {
+    max-width: 520px;
+}
+
+.aanbod-number {
+    display: block;
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #9a7354;
+}
+
+.aanbod-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    letter-spacing: -1px;
+    color: #3d3028;
+    margin: 0 0 30px;
+}
+
+.aanbod-text p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #66574c;
+    margin: 0 0 25px;
+}
+
+.aanbod-text a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8d6549;
+    text-decoration: none;
+    border-bottom: 1px solid #9a7354;
+    padding-bottom: 5px;
+    transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.aanbod-text a span {
+    font-size: 19px;
+}
+
+.aanbod-text a:hover {
+    gap: 18px;
+    color: #5b4030;
+}
+
+
+/* =========================
+   FOTO'S BIJ HET AANBOD
+========================= */
+
+.aanbod-photo-placeholder {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #e7ddd2;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+/* Foto vult het hele kader */
+
+.aanbod-photo-placeholder img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+
+/* =========================
+   REVERSE
+========================= */
+
+.aanbod-section-reverse .aanbod-photo-placeholder {
+    order: 1;
+}
+
+.aanbod-section-reverse .aanbod-text {
+    order: 2;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.aanbod-info {
+    width: 100%;
+    padding: 130px 20px;
+    box-sizing: border-box;
+    background: #f8f4ee;
+    text-align: center;
+}
+
+.aanbod-info-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aanbod-info .section-tag {
+    color: #9a7354;
+}
+
+.aanbod-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #3d3028;
+    margin: 25px 0 30px;
+}
+
+.aanbod-info .aanbod-line {
+    width: 65px;
+    height: 2px;
+    background: #9a7354;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.aanbod-info p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #66574c;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   OPSOMMING
+========================= */
+
+.aanbod-list {
+    list-style: none;
+    padding: 0;
+    margin: 35px auto 40px;
+    width: 100%;
+    max-width: 560px;
+    border-top: 1px solid #e7ddd2;
+    text-align: left;
+}
+
+.aanbod-list li {
+    position: relative;
+    width: 100%;
+    padding: 16px 20px 16px 35px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e7ddd2;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #66574c;
+}
+
+.aanbod-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9a7354;
+    font-size: 15px;
+}
+
+.aanbod-last-text {
+    margin-top: 35px !important;
+    font-size: 15px !important;
+    color: #9a7354 !important;
+}
+
+
+/* =========================
+   WERKWIJZE
+========================= */
+
+.aanbod-werkwijze {
+    width: 100%;
+    padding: 130px 8%;
+    box-sizing: border-box;
+    background: #fffdf9;
+    text-align: center;
+}
+
+.aanbod-werkwijze-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aanbod-werkwijze h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #3d3028;
+    margin: 25px 0 30px;
+}
+
+.aanbod-werkwijze .aanbod-line {
+    width: 65px;
+    height: 2px;
+    background: #9a7354;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================
+   WERKWIJZE STAPPEN
+========================= */
+
+.werkwijze-stappen {
+    max-width: 900px;
+    margin: 70px auto 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.werkwijze-stap {
+    text-align: left;
+    border-top: 1px solid #e7ddd2;
+    padding-top: 20px;
+}
+
+.werkwijze-stap span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    color: #9a7354;
+    letter-spacing: 2px;
+}
+
+.werkwijze-stap p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #66574c;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.aanbod-cta {
+    width: 100%;
+    padding: 130px 20px;
+    box-sizing: border-box;
+    background: #f8f4ee;
+    text-align: center;
+}
+
+.aanbod-cta-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.aanbod-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.2rem, 5vw, 5rem);
+    line-height: 1.05;
+    font-weight: 400;
+    color: #3d3028;
+    margin: 25px 0 30px;
+}
+
+.aanbod-cta .aanbod-line {
+    width: 65px;
+    height: 2px;
+    background: #9a7354;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.aanbod-cta p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #66574c;
+    margin: 0 0 35px;
+}
+
+
+/* =========================
+   ANIMATIES
+========================= */
+
+.aanbod-page .reveal {
+    opacity: 0;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.aanbod-page .reveal-up {
+    transform: translateY(50px);
+}
+
+.aanbod-page .reveal-left {
+    transform: translateX(-50px);
+}
+
+.aanbod-page .reveal-right {
+    transform: translateX(50px);
+}
+
+.aanbod-page .reveal-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .aanbod-hero {
+        min-height: 850px;
+    }
+
+    .aanbod-hero-image {
+        width: 100%;
+        height: 600px;
+        top: 0;
+
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 45%,
+            transparent 100%
+        );
+
+        mask-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 45%,
+            transparent 100%
+        );
+    }
+
+    .aanbod-hero::after {
+        width: 100%;
+        height: 70%;
+        top: 30%;
+
+        background: linear-gradient(
+            to bottom,
+            rgba(248, 244, 238, 0) 0%,
+            rgba(248, 244, 238, 0.85) 55%,
+            #f8f4ee 100%
+        );
+    }
+
+    .aanbod-hero-content {
+        width: 100%;
+        max-width: 700px;
+        padding: 80px 8%;
+    }
+
+    .aanbod-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .aanbod-section-reverse .aanbod-photo-placeholder,
+    .aanbod-section-reverse .aanbod-text {
+        order: initial;
+    }
+
+    .aanbod-text {
+        max-width: 650px;
+    }
+
+    .aanbod-photo-placeholder {
+        height: 500px;
+    }
+
+    .werkwijze-stappen {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .werkwijze-stap {
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   MOBIEL
+========================= */
+
+@media (max-width: 600px) {
+
+    .aanbod-hero {
+        min-height: 780px;
+    }
+
+    .aanbod-hero-image {
+        height: 500px;
+    }
+
+    .aanbod-hero-content {
+        padding: 60px 25px;
+    }
+
+    .aanbod-hero h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .aanbod-hero .section-tag {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .aanbod-section,
+    .aanbod-info,
+    .aanbod-werkwijze,
+    .aanbod-cta {
+        padding: 90px 20px;
+    }
+
+    .aanbod-text h2,
+    .aanbod-info h2,
+    .aanbod-werkwijze h2,
+    .aanbod-cta h2 {
+        font-size: 3.2rem;
+    }
+
+    .aanbod-photo-placeholder {
+        height: 380px;
+    }
+
+    .aanbod-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .aanbod-text p,
+    .aanbod-info p,
+    .aanbod-cta p {
+        font-size: 16px;
+    }
+}

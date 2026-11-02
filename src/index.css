@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* =========================
+   SCROLL ANIMATIONS
+========================= */
+
+.reveal {
+  opacity: 0;
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+
+/* VAN ONDER NAAR BOVEN */
+
+.reveal-up {
+  transform: translateY(45px);
+}
+
+
+/* VAN LINKS NAAR RECHTS */
+
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+
+/* VAN RECHTS NAAR LINKS */
+
+.reveal-right {
+  transform: translateX(60px);
+}
+
+
+/* VAN BOVEN NAAR ONDER */
+
+.reveal-down {
+  transform: translateY(-45px);
+}
+
+
+/* ZICHTBAAR */
+
+.reveal-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}

@@ -1,0 +1,54 @@
+.cta {
+  position: relative;
+  padding: 180px 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(35, 26, 20, 0.6);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  color: white;
+}
+
+.cta .section-tag {
+  color: rgba(255,255,255,.8);
+}
+
+.cta h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: white;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.cta p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255,255,255,.9);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+@media (max-width: 900px) {
+  .cta {
+    padding: 120px 0;
+    background-attachment: scroll;
+  }
+
+  .cta h2 {
+    font-size: 48px;
+  }
+
+  .cta p {
+    font-size: 18px;
+  }
+}
