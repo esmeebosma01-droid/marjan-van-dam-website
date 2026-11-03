@@ -19,22 +19,17 @@
     <meta name="author" content="Marjan van Dam - Paard & Coaching" />
 
     <!-- Social media -->
-    <meta
-      property="og:title"
-      content="Marjan van Dam | Paard & Coaching"
-    />
-
+    <meta property="og:title" content="Marjan van Dam | Paard & Coaching" />
     <meta
       property="og:description"
       content="Persoonlijke paardencoaching, individuele coaching en teamcoaching in Groningen."
     />
-
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nl_NL" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
@@ -43,6 +38,15 @@
   </head>
 
   <body>
+    <!-- Verborgen formulier voor Netlify -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="naam" />
+      <input type="email" name="email" />
+      <input type="tel" name="telefoon" />
+      <textarea name="bericht"></textarea>
+    </form>
+
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>

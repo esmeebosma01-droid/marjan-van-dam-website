@@ -8,21 +8,14 @@ function Contact() {
     <main className="contact-page">
 
       {/* HERO */}
-
       <section
         className="contact-hero"
         aria-label="Contact met Marjan van Dam"
       >
-
         <div className="contact-hero-content">
-
           <Reveal direction="left">
-
             <div className="contact-hero-text">
-
-              <span className="contact-tag">
-                CONTACT
-              </span>
+              <span className="contact-tag">CONTACT</span>
 
               <h1>
                 Laten we
@@ -37,45 +30,30 @@ function Contact() {
                 paardencoaching voor jou kan betekenen?
                 Neem gerust contact met mij op.
               </p>
-
             </div>
-
           </Reveal>
 
           <Reveal direction="right">
-
             <div className="contact-hero-photo">
-
               <img
                 src={tarieven}
                 alt="Paard tijdens een paardencoachingsessie"
               />
-
             </div>
-
           </Reveal>
-
         </div>
-
       </section>
 
-
       {/* CONTACT */}
-
       <section
         className="contact-main"
         aria-label="Contactgegevens en contactformulier"
       >
-
         <div className="contact-container">
 
           <Reveal direction="left">
-
             <div className="contact-info">
-
-              <span className="contact-tag">
-                NEEM CONTACT OP
-              </span>
+              <span className="contact-tag">NEEM CONTACT OP</span>
 
               <h2>
                 Ik hoor graag
@@ -94,7 +72,6 @@ function Contact() {
               <div className="contact-details">
 
                 <div className="contact-detail">
-
                   <span className="contact-detail-label">
                     TELEFOON
                   </span>
@@ -102,11 +79,9 @@ function Contact() {
                   <a href="tel:0654344039">
                     06 - 54 34 40 39
                   </a>
-
                 </div>
 
                 <div className="contact-detail">
-
                   <span className="contact-detail-label">
                     EMAIL
                   </span>
@@ -114,74 +89,42 @@ function Contact() {
                   <a href="mailto:paard.en.coach@outlook.com">
                     paard.en.coach@outlook.com
                   </a>
-
                 </div>
 
                 <div className="contact-detail">
-
                   <span className="contact-detail-label">
                     LOCATIE
                   </span>
 
-                  <p>
-                    Lutjegast, Groningen
-                  </p>
-
+                  <p>Lutjegast, Groningen</p>
                 </div>
 
               </div>
-
             </div>
-
           </Reveal>
 
-
           {/* CONTACTFORMULIER */}
-
           <Reveal direction="right">
-
             <div className="contact-form-wrapper">
 
               <form
                 className="contact-form"
-                action="https://formsubmit.co/paard.en.coach@outlook.com"
+                name="contact"
                 method="POST"
+                action="/bedankt"
+                data-netlify="true"
               >
 
-                {/* FORMSUBMIT INSTELLINGEN */}
-
                 <input
                   type="hidden"
-                  name="_subject"
-                  value="Nieuw bericht via de website"
+                  name="form-name"
+                  value="contact"
                 />
-
-                <input
-                  type="hidden"
-                  name="_captcha"
-                  value="false"
-                />
-
-                <input
-                  type="hidden"
-                  name="_template"
-                  value="table"
-                />
-
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://marjanvandamcoaching.nl/bedankt"
-                />
-
 
                 <div className="form-row">
 
                   <div className="form-group">
-
-                    <label htmlFor="naam">
-                      Naam
-                    </label>
+                    <label htmlFor="naam">Naam</label>
 
                     <input
                       type="text"
@@ -191,15 +134,10 @@ function Contact() {
                       autoComplete="name"
                       required
                     />
-
                   </div>
 
-
                   <div className="form-group">
-
-                    <label htmlFor="email">
-                      E-mailadres
-                    </label>
+                    <label htmlFor="email">E-mailadres</label>
 
                     <input
                       type="email"
@@ -209,14 +147,11 @@ function Contact() {
                       autoComplete="email"
                       required
                     />
-
                   </div>
 
                 </div>
 
-
                 <div className="form-group">
-
                   <label htmlFor="telefoon">
                     Telefoonnummer
                   </label>
@@ -228,15 +163,10 @@ function Contact() {
                     placeholder="Je telefoonnummer"
                     autoComplete="tel"
                   />
-
                 </div>
 
-
                 <div className="form-group">
-
-                  <label htmlFor="bericht">
-                    Bericht
-                  </label>
+                  <label htmlFor="bericht">Bericht</label>
 
                   <textarea
                     id="bericht"
@@ -245,9 +175,7 @@ function Contact() {
                     placeholder="Waar kan ik je mee helpen?"
                     required
                   ></textarea>
-
                 </div>
-
 
                 <button
                   type="submit"
@@ -258,30 +186,20 @@ function Contact() {
                 </button>
 
               </form>
-
             </div>
-
           </Reveal>
 
         </div>
-
       </section>
 
-
       {/* CTA */}
-
       <section
         className="contact-cta"
         aria-label="Vrijblijvend kennismaken met paardencoaching"
       >
-
         <Reveal>
-
           <div className="contact-cta-content">
-
-            <span className="contact-tag">
-              KENNISMAKEN
-            </span>
+            <span className="contact-tag">KENNISMAKEN</span>
 
             <h2>
               Soms begint verandering
@@ -303,11 +221,8 @@ function Contact() {
               Neem contact op
               <span>→</span>
             </a>
-
           </div>
-
         </Reveal>
-
       </section>
 
     </main>
