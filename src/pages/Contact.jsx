@@ -171,7 +171,7 @@ function Contact() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://dulcet-lollipop-edbb84.netlify.app/bedankt"
+                  value="https://marjanvandamcoaching.nl/bedankt"
                 />
 
 
