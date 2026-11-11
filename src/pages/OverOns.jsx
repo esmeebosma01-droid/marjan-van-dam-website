@@ -1,7 +1,7 @@
 
 import "./OverOns.css";
 import Reveal from "../components/Reveal";
-import mamaFirenzio from "../assets/mamafirenzio.jpg";
+import mamaFirenzio from "../assets/overonsmarjan.jpg";
 import overons from "../assets/Overons.jpg";
 import firenzio from "../assets/firenzio.jpg";
 import samen from "../assets/samen.jpg";

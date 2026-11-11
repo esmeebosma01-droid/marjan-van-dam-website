@@ -19,7 +19,7 @@ function Navbar() {
         <Link to="/" className="brand" onClick={closeMenu}>
           <img
             src={logo}
-            alt="Marjan van Dam Paard & Coaching"
+            alt="Marjan van Dam Paard & Coach"
             className="brand-logo"
           />
 
@@ -29,7 +29,7 @@ function Navbar() {
             </div>
 
             <div className="brand-subtitle">
-              PAARD & COACHING
+              PAARD & COACH
             </div>
           </div>
         </Link>
