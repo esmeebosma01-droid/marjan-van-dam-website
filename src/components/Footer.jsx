@@ -11,7 +11,7 @@ function Footer() {
         <div className="footer-brand">
           <img
             src={logo}
-            alt="Marjan van Dam - Paard & Coaching"
+            alt="Marjan van Dam - Paard & Coach"
             className="footer-logo-image"
           />
 
@@ -107,7 +107,7 @@ function Footer() {
       {/* FOOTER BOTTOM */}
       <div className="footer-bottom">
         <span>
-          © 2026 Marjan van Dam | Paard & Coaching
+          © 2026 Marjan van Dam | Paard & Coach
         </span>
 
         <span className="footer-leaf">❧</span>
